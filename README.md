@@ -7,6 +7,10 @@ This deep learning project focuses on classifying brain CT scan images to determ
 The model is trained to distinguish between these categories using convolutional neural networks (CNNs).
 
 
+📁 Dataset
+The dataset used in this project is publicly available on Kaggle: https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset
+
+
 🎯 Objective
 To develop a deep learning model that can automatically classify brain CT scan images into different tumor types or non-tumor categories with high accuracy.
 
