@@ -7,7 +7,7 @@ This deep learning project focuses on classifying brain CT scan images to determ
 - A specific tumor type
 - Or a non-tumor (normal) brain
   
-The model is trained to distinguish between these categories using convolutional neural networks (CNNs).
+The model is trained to distinguish between these categories using convolutional neural networks (CNNs) and transfer learning.
 
 
 📁 Dataset
