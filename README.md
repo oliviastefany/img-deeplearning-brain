@@ -2,8 +2,10 @@
 
 🧠 Brain Tumor Classification from CT Scans using Deep Learning
 This deep learning project focuses on classifying brain CT scan images to determine whether they show:
+
 - A specific tumor type
 - Or a non-tumor (normal) brain
+  
 The model is trained to distinguish between these categories using convolutional neural networks (CNNs).
 
 
@@ -16,23 +18,25 @@ To develop a deep learning model that can automatically classify brain CT scan i
 
 
 ⚙️ Project Workflow
-- Import necessary libraries (TensorFlow, Keras, NumPy, Matplotlib, etc.)
+- Import libraries (TensorFlow, Keras, NumPy, Matplotlib, etc.)
 - Define directory structure for training and testing data
 - Perform data visualization to understand class distribution and inspect sample images
-- Build CNN model architectureCompile the model with appropriate optimizer, loss function, and metrics
+- Build CNN model architecture
+- Compile the model with appropriate optimizer, loss function, and metrics
+- Using Transfer Learning to compare with CNN model
 - Train the model using training data and validate with test data
 - Visualize training accuracy and loss to monitor model learning
-- Evaluate model using:Confusion Matrix to observe misclassifications
+- Evaluate model using: Confusion Matrix to observe misclassifications
 - ROC Curve to measure classification performance across thresholds
   
 
 📈 Model Performance & Evaluation
-- The training accuracy initially reached 97%, but showed potential signs of overfitting
-- Final test accuracy settled around 93%, indicating a still-strong generalization
-- The loss curve decreased, and accuracy increased over epochs — suggesting good learning
-- The Confusion Matrix shows where the model struggles and biased toward a specific class also which tumor types are commonly misclassified (e.g., tumor type confusion)
-- The ROC Curve helps visualize how well the model distinguishes between classes at different threshold levels
-  
+- The initial CNN model achieved 99% training accuracy and 97% validation accuracy, though slight signs of overfitting were observed as validation loss fluctuated in later epochs.
+- After applying transfer learning using VGG16, the model reached around 94% training accuracy and 93% test accuracy, showing strong generalization with improved class balance.
+- Training shows a clear positive trend: loss decreases and accuracy increases overall. The most noticeable accuracy jump occurs early (0.0–0.1 epochs), followed by smaller fluctuations. Despite ups and downs, performance improves over time.
+- The Confusion Matrix revealed 91% overall accuracy with consistent performance across classes and slightly better results on non-tumor cases, indicating strong and reliable classification.
+- The ROC Curve confirmed the model's ability to differentiate well between multiple tumor classes.
+
 
 🧠 Insight & Takeaways
 Deep learning models often act as black boxes, making it hard to interpret internal decision-making. However, from this project, we can observe:
